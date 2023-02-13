@@ -46,8 +46,6 @@ function theme_setup()
     * Register Menus
     */
     register_nav_menu('main_menu', __( 'Main Menu', 'halozend' ) );
-    register_nav_menu('menu_show_category', __( 'Menu Show Category', 'halozend' ) );
-    register_nav_menu('menu_footer', __( 'Menu Footer', 'halozend' ) );
 
 }
 add_action( 'after_setup_theme', 'theme_setup', 11);
