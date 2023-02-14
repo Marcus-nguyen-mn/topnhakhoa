@@ -48,7 +48,13 @@ function append_da_damn_hover_popup($item_output, $item) {
             $mega .= '</div>';
         endif;  
         return $item_output.$mega;
+    }elseif($check_mega_2 == true){
+        return $item_output;
+    }else{
+        return $item_output;
     }
-    return $item_output;
+    
+
+    
     
 }

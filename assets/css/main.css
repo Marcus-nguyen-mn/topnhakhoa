@@ -16,6 +16,22 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Raleway-SemiBold';
     src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
         url('../fonts/Raleway-SemiBold.woff') format('woff');
@@ -254,9 +270,9 @@ a{
     display: block;
 }
 .mc_header .menu-item .mega-popup{
-    position: absolute;
+    position: fixed;
     width: 1240px;
-    left: -226px;
+    left: 340px;
     top: 34px;
     box-shadow:0 10px 20px #00000008;
     padding: 20px;
@@ -310,4 +326,27 @@ a{
 }
 .mc-fade-in-bottom{-webkit-animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both;animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both}
  @-webkit-keyframes mc-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes mc-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-/* END CSS HEADER */
+.mc_header .menu-item-has-children .sub-menu{
+    position: absolute;
+    width: 210px;
+    left: 0;
+    box-shadow: 0 4px 30px #0000001f;
+    border-radius: 10px;
+    top: 34px;
+    padding: 10px;
+    display: none;
+    -webkit-animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both;animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both
+}
+.mc_header .menu-item-has-children:hover .sub-menu{
+    display: block;
+}
+.mc_header .menu-item-has-children .sub-menu li a:hover{
+    opacity: 0.7;
+    transition: 0.3s all;
+}
+.mc_header .menu-item-has-children .sub-menu li a{
+    transition: 0.3s all;
+    font-size: 11px;
+    font-family: 'Raleway-Medium';
+}
+ /* END CSS HEADER */
