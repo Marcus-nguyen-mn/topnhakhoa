@@ -68,6 +68,9 @@ function append_da_damn_hover_popup($item_output, $item) {
             $mega .= '<div class="colum-1-title">';
             $mega .= get_the_title( $column1->ID );
             $mega .= '</div>';
+            $mega .= '<a href="#" class="mega-2-show-more">';
+            $mega .= 'Show more';
+            $mega .= '</a>';
             $mega .= '</div>';
         }
         $column2 = get_field('column_2', $item);
@@ -98,9 +101,9 @@ function append_da_damn_hover_popup($item_output, $item) {
         }
         $column3 = get_field('column_3', $item);
         if( $column3  ){
-            $mega .= '<div class="mega-2-col">';
+            $mega .= '<div class="mega-2-col mc-cs-mega-2-col">';
             $mega .= '<div class="column-3-lable">';
-            $mega .= 'Top News';
+            $mega .= 'Latest News';
             $mega .= '</div>';
             foreach( $column3 as $column ): 
                 $permalink = get_permalink( $column->ID );

@@ -389,4 +389,60 @@ a{
     max-width: 33.33%;
     width: 100%;
 }
+.mc-mega-2 .column-2-item .column-2-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.mc-mega-2 .column-2-item .column-2-row .column-2-item-thumb{
+    flex: 0 0 32%;
+    max-width: 32%;
+    width: 100%;
+}
+.mc-mega-2 .column-2-item .column-2-row .column-2-item-thumb img{
+    width: 100%;
+    border:10px;
+}
+.mc-mega-2 .column-2-item .column-2-row .column-2-item-thumb{
+    flex: 0 0 32%;
+    max-width: 32%;
+    width: 100%;
+}
+.mc-mega-2 .column-2-item .column-2-row  .column-2-item-content{
+    flex: 0 0 68%;
+    max-width: 64%;
+    width: 100%;
+}
+.mc-mega-2 .column-2-lable{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #80808026;
+    margin-right: 25px;
+    font-size: 15px;
+    font-family: 'Raleway-Black';
+}
+.mc-mega-2 .column-3-lable{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #80808026;
+    font-size: 15px;
+    font-family: 'Raleway-Black';
+}
+.mc-mega-2 .mc-cs-mega-2-col{
+    padding-left: 45px;
+}
+.mc-mega-2 .mc-cs-mega-2-col .column-3-item:last-child{
+    border-bottom: 0;
+}
+.mc-mega-2 .mc-cs-mega-2-col .column-3-item{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #80808042;
+}
+.mega-2-show-more{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
  /* END CSS HEADER */
