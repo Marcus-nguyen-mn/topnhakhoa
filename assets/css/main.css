@@ -271,12 +271,10 @@ a{
 }
 .mc_header .menu-item .mega-popup{
     position: fixed;
-    width: 1240px;
-    left: 340px;
-    top: 34px;
-    box-shadow:0 10px 20px #00000008;
-    padding: 20px;
-    border-radius: 15px;
+    width: 100%;
+    left: 0;
+    top: 47px;
+    background: transparent;
     display: none;
 }
 .mega-row{
@@ -444,5 +442,13 @@ a{
     text-align: right;
     margin-top: 20px;
     margin-right: 50px;
+}
+.mega-popup-contain{
+    max-width: 1240px;
+    margin: 0 auto;
+    background: #fff ;
+    box-shadow:0 10px 20px #00000008;
+    padding: 20px;
+    border-radius: 15px;
 }
  /* END CSS HEADER */

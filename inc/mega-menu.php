@@ -11,6 +11,7 @@ function append_da_damn_hover_popup($item_output, $item) {
         }
         if( $list_posts ): 
             $mega = '<div class="mega-popup mc-fade-in-bottom">';
+            $mega .= '<div class="mega-popup-contain">';
             $mega .= '<div class="mega-name-pop-and-show-more">';
             if (get_field('name_menu_item', $item)) {
                 $mega .= '<div class="mega-name-pop">';
@@ -46,10 +47,12 @@ function append_da_damn_hover_popup($item_output, $item) {
             endforeach;
             $mega .= '</div>';
             $mega .= '</div>';
+            $mega .= '</div>';
         endif;  
         return $item_output.$mega;
     }elseif($check_mega_2 == true){
         $mega = '<div class="mega-popup mc-fade-in-bottom mc-mega-2">';
+        $mega .= '<div class="mega-popup-contain">';
         if (get_field('lable_mega_2', $item)) {
             $mega .= '<div class="mega-lable-pop">';
             $mega .= get_field('lable_mega_2', $item);
@@ -120,6 +123,7 @@ function append_da_damn_hover_popup($item_output, $item) {
             endforeach;
             $mega .= '</div>';
         }
+        $mega .= '</div>';
         $mega .= '</div>';
         $mega .= '</div>';
         return $item_output.$mega;
