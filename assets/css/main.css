@@ -8,6 +8,14 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Lora-Italic';
+    src: url('../fonts/Lora-Italic.woff2') format('woff2'),
+        url('../fonts/Lora-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Raleway-Thin';
     src: url('../fonts/Raleway-Thin.woff2') format('woff2'),
         url('../fonts/Raleway-Thin.woff') format('woff');
@@ -452,3 +460,46 @@ a{
     border-radius: 15px;
 }
  /* END CSS HEADER */
+
+ /* STYLE HOME */
+.section_1 .sec-1-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section_1 .section_1_contain{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.section_1 .left-banner{
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 100%;
+}
+.section_1 .right-contain{
+    flex: 0 0 50%;
+    max-width: 44%;
+    width: 100%;
+}
+.section_1{
+    padding: 30px 0;
+}
+.section_1 .right_content_sec_1{
+    font-size: 20px;
+    font-family: 'Lora-Italic';
+    line-height: 34px;
+    padding-right: 30px;
+}
+.section_1 .right_content_sec_1 h3{
+    color: #333;
+    font-family: 'Raleway-Black';
+    font-size: 90px;
+    line-height: 80px;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+    text-shadow: 5px 5px 0px #aedbdb;
+    text-align: right;
+    padding-right: 30px;
+}
+ /* END STYLE HOME */
