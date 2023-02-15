@@ -49,7 +49,77 @@ function append_da_damn_hover_popup($item_output, $item) {
         endif;  
         return $item_output.$mega;
     }elseif($check_mega_2 == true){
-        return $item_output;
+        $mega = '<div class="mega-popup mc-fade-in-bottom mc-mega-2">';
+        if (get_field('lable_mega_2', $item)) {
+            $mega .= '<div class="mega-lable-pop">';
+            $mega .= get_field('lable_mega_2', $item);
+            $mega .= '</div>';
+        }
+        $mega .= '<div class="mega-row-2">';
+        $column1 = get_field('column_1', $item);
+        if( $column1  ){
+            $mega .= '<div class="mega-2-col">';
+            $mega .= '<div class="colum-1-thumb">';
+            $mega .= '<img src='. get_the_post_thumbnail_url( $column1->ID ).' alt='.  get_the_post_thumbnail_url( $column1->ID ) .' />';
+            $mega .= '<div class="colum-1-thumb-bg">';
+            $mega .= '<img src='. get_the_post_thumbnail_url( $column1->ID ).' alt='.  get_the_post_thumbnail_url( $column1->ID ) .' />';
+            $mega .= '</div>';
+            $mega .= '</div>';
+            $mega .= '<div class="colum-1-title">';
+            $mega .= get_the_title( $column1->ID );
+            $mega .= '</div>';
+            $mega .= '</div>';
+        }
+        $column2 = get_field('column_2', $item);
+        if( $column2  ){
+            $mega .= '<div class="mega-2-col">';
+            $mega .= '<div class="column-2-lable">';
+            $mega .= 'Top News';
+            $mega .= '</div>';
+            foreach( $column2 as $column ): 
+                $permalink = get_permalink( $column->ID );
+                $mega .= '<div class="column-2-item">';
+                $mega .= '<div class="column-2-row">';
+                $mega .= '<div class="column-2-item-thumb">';
+                $mega .= '<img src='. get_the_post_thumbnail_url( $column->ID ) .' alt='. get_the_post_thumbnail_url( $column->ID ) .' />';
+                $mega .= '</div>';
+                $mega .= '<div class="column-2-item-content">';
+                $mega .= '<div class="mega-item-title">';
+                $mega .= get_the_title(  $column->ID );
+                $mega .= '</div>';
+                $mega .= '<div class="mega-item-date">';
+                $mega .= get_the_date( 'D M j', $column->ID, );
+                $mega .= '</div>';
+                $mega .= '</div>';
+                $mega .= '</div>';
+                $mega .= '</div>';
+            endforeach;
+            $mega .= '</div>';
+        }
+        $column3 = get_field('column_3', $item);
+        if( $column3  ){
+            $mega .= '<div class="mega-2-col">';
+            $mega .= '<div class="column-3-lable">';
+            $mega .= 'Top News';
+            $mega .= '</div>';
+            foreach( $column3 as $column ): 
+                $permalink = get_permalink( $column->ID );
+                $mega .= '<div class="column-3-item">';
+                $mega .= '<div class="column-3-item-content">';
+                $mega .= '<div class="mega-item-title">';
+                $mega .= get_the_title(  $column->ID );
+                $mega .= '</div>';
+                $mega .= '<div class="mega-item-date">';
+                $mega .= get_the_date( 'D M j', $column->ID, );
+                $mega .= '</div>';
+                $mega .= '</div>';
+                $mega .= '</div>';
+            endforeach;
+            $mega .= '</div>';
+        }
+        $mega .= '</div>';
+        $mega .= '</div>';
+        return $item_output.$mega;
     }else{
         return $item_output;
     }
