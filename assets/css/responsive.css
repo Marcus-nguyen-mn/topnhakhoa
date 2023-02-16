@@ -4,6 +4,11 @@
         padding: 0 10px;
         margin:0 auto;
     }
+    .mc-container-big{
+        max-width: 100%;
+        padding: 0 10px;
+        margin:0 auto;
+    }
     .mc-mg--15{
         margin:0 -10px;
     }
