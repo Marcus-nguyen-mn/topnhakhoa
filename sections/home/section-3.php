@@ -11,27 +11,46 @@
                 </div>
             </div>
             <div class="slider_post_sec_3">
+                <?php 
+                    $post_sec_3 = get_field('select_posts_section_3');
+                    
+                    if( $post_sec_3 ):
+                        foreach( $post_sec_3 as $post ):
+                            $permalink = get_permalink( $post->ID );
+                            $title = get_the_title( $post->ID );
+                            $one_cate = '';
+                            $link_one_cate = '';
+                            $categories = get_the_category($post->ID);
+                            foreach( $categories as $category ) {
+                                $one_cate = $category->name;
+                                $link_one_cate = get_category_link( $category->term_id );
+                            }
+                ?>
                 <div class="slide_sec_3_item">
-                    1
+                    <a href="<?php echo $permalink; ?>" class="thumb_post_sec_3">
+                        <img src='<?php echo get_the_post_thumbnail_url( $post->ID ) ?>' alt='<?php echo get_the_post_thumbnail_url( $post->ID ) ?>' />
+                    </a>
+                    <a href="<?php echo $link_one_cate; ?>" class="cate_post_sec3">
+                        <?php echo $one_cate; ?>
+                    </a>
+                    <a href="<?php echo $permalink; ?>" class="title_post_sec_3">
+                        <?php echo $title; ?>
+                    </a>
+                    <div class="line_sec_3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-2.png" alt="Line">
+                    </div>
+                    <div class="author_date">
+                        <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j', $post->ID ); ?></span>
+                    </div>
+                    <div class="descp_post_sec_3">
+                        <?php echo get_the_excerpt($post->ID); ?>
+                    </div>
                 </div>
-                <div class="slide_sec_3_item">
-                    2
-                </div>
-                <div class="slide_sec_3_item">
-                    3
-                </div>
-                <div class="slide_sec_3_item">
-                    4
-                </div>
-                <div class="slide_sec_3_item">
-                    5
-                </div>
-                <div class="slide_sec_3_item">
-                    6
-                </div>
-                <div class="slide_sec_3_item">
-                    7
-                </div>
+                <?php 
+                        endforeach;
+                        wp_reset_postdata();
+                    endif;
+                    ?>
             </div>
         </div>
     </div>
