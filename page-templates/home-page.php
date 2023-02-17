@@ -8,6 +8,7 @@ get_header();
     get_template_part('sections/home/section-1'); 
     get_template_part('sections/home/section-2'); 
     get_template_part('sections/home/section-3');
+    get_template_part('sections/home/section-4');
 ?>
 
 <?php get_footer();?>
