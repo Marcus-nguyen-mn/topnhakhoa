@@ -30,7 +30,7 @@
                     <div class="mc-col-12 mc-pdx-15">
                         <div class="item-first-5">
                             <div class="mc-row mc-align-center">
-                                <div class="mc-col-5 mc-col-sm-12">
+                                <div class="mc-col-5 mc-col-sm-12 oder-2">
                                     <a href="<?php echo get_category_link($term[0]); ?>" class="cate_item_sec_5">
                                         <?php echo get_cat_name( $term[0] ); ?>
                                     </a>
@@ -44,14 +44,14 @@
                                         <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j' ); ?></span>
                                     </div>
                                 </div>
-                                <a href="<?php the_permalink(); ?>" class="mc-col-7 mc-col-sm-12 img-first-sec-5">
+                                <a href="<?php the_permalink(); ?>" class="mc-col-7 mc-col-sm-12 img-first-sec-5 oder-1">
                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_url(); ?>" />
                                 </a>
                             </div>
                         </div>
                     </div>
                     <?php else: ?>
-                    <div class="mc-col-3 mc-pdx-15">
+                    <div class="mc-col-3 mc-col-sm-6 mc-pdx-15">
                         <div class="item-second-5">
                             <div class="item-bottom-5">
                                 <div class="thumb-cate-5">
