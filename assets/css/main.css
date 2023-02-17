@@ -931,4 +931,160 @@ a{
 .sec4_contain .list-post-sec4{
     margin-bottom: 38px;
 }
+.section_5 .mc-custome-title{
+    position: relative;
+    margin-bottom: 18px;
+}
+.section_5 .mc-custome-title .mc-main-title{
+    font-size: 23px;
+    font-family: 'Raleway-Black';
+    position: relative;
+    z-index: 3;
+}
+.section_5 .mc-custome-title .mc-sub-title{
+    position: absolute;
+    font-size: 55px;
+    bottom: -10px;
+    left:0;
+    font-family: 'Raleway-Black';
+    color:#e7e7e7;
+    z-index: 2;
+}
+.section_5 .item-first-5 .cate_item_sec_5{
+    display: block;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.section_5 .item-first-5 .cate_item_sec_5:hover:before{
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    box-shadow: 0 0 10px #aedbdb;
+}
+.section_5 .item-first-5 .cate_item_sec_5::before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    border-radius: 6px;
+    background-color: #aedbdb;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.section_5 .item-first-5 .title_item_sec_5{
+    font-size: 38px;
+    font-family: 'Raleway-Black';
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
+}
+.section_5 .item-first-5 .descp_post_sec_5{
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    line-height: 22px;
+    padding: 0 40px;
+    margin-bottom: 25px;
+}
+.section_5 .item-first-5 .author_date{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Regular';
+    color: #666;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.section_5 .item-first-5 .author_date .author{
+    font-family: 'Montserrat-Bold';
+    color: #000;
+}
+.section_5 .item-first-5 .author_date span{
+    margin: 0 3px;
+}
+.section_5 .item-first-5 img{
+    border-radius: 10px;
+}
+.section_5 .item-first-5{
+    margin-bottom: 40px;
+}
+.section_5 .img-first-sec-5{
+    padding-left: 40px;
+}
+.section_5 .item-bottom-5 .thumb-bt-5 img{
+    height: 287px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section_5 .item-bottom-5 .thumb-cate-5{
+    position: relative;
+}
+.section_5 .item-bottom-5 .cate_item_bt_sec_5{
+    display: block;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 10px;
+    color:#fff;
+    letter-spacing: 2px;
+}
+.section_5 .item-bottom-5 .cate_item_bt_sec_5:hover:before{
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    box-shadow: 0 0 10px #aedbdb;
+}
+.section_5 .item-bottom-5 .cate_item_bt_sec_5::before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    border-radius: 6px;
+    background-color: #aedbdb;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.section_5 .item-bottom-5 .sec-5-custom-cate{
+    position: absolute;
+    bottom: -5px;
+    z-index: 3;
+    left: 0;
+}
+.section_5 .item-bottom-5 .thumb-bt-5{
+    margin-bottom: 20px;
+    display: block;
+}
+.section_5 .item-bottom-5 .title_item_sec_5{
+    font-size: 15px;
+    font-family: 'Raleway-Black';
+    margin-bottom: 14px;
+    display: block;
+}
+.section_5 .item-bottom-5 .date{
+    font-family: 'Montserrat-Regular';
+    color: #666;
+    font-size: 12px;
+}
+.section_5 .list-post-sec5{
+    margin-bottom: 38px;
+}
  /* END STYLE HOME */
