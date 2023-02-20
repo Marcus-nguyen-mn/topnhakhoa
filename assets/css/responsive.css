@@ -280,6 +280,21 @@
         max-width: 100%;
         width: 100%;
     }
+    .list_post_6 .title-item-left-6{
+        font-size: 22px;
+    }
+    .list_post_6 .posi-pare .title-item-right-6{
+        font-size: 16px;
+    }
+    .list_post_6 .img-first-sec-right-6 img{
+        height: 210px;
+    }  
+    .list_post_6 .item-first-post-6-right:before{
+        height: 110px;
+    }
+    .sec_6_contain{
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (max-width: 576px) {
     .mc-col-sm-1{
@@ -489,6 +504,16 @@
     }
     .section_4{
         margin-bottom: 40px;
+    }
+    .sec5_contain{
+        margin-bottom: 50px;
+    }
+    .list_post_6 .item-first-post-6-right{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .sec_6_contain{
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 438px) {
