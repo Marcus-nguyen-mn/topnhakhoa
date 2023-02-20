@@ -515,6 +515,34 @@
     .sec_6_contain{
         margin-bottom: 30px;
     }
+    .section_7 .mc-custome-title .mc-sub-title{
+        width: 90%;
+        text-align: center;
+        font-size: 35px;
+    }
+    .list_post_sec_7 .img-first-sec-7 img{
+        height: 240px;
+        margin-bottom: 15px;
+    }
+    .list_post_sec_7 .excerpt-item-7{
+        display: none;
+    }
+    .list_post_sec_7 .mc-list-cate-7{
+        justify-content: center;
+    }
+    .list_post_sec_7 .mc-list-cate-7 a{
+        margin-bottom: 15px;
+    }
+    .list_post_sec_7 .title_item_sec_7{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .list_post_sec_7 .author_date{
+        text-align: center;
+    }
+    .section_7 .item-sec-7{
+        margin-bottom: 10px;
+    }
 }
 @media only screen and (max-width: 438px) {
 }

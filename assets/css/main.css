@@ -1313,4 +1313,124 @@ a{
     color: #666;
     font-size: 12px;
 }
+.section_7 .mc-custome-title{
+    position: relative;
+    margin-bottom: 40px;
+}
+.section_7 .mc-custome-title .mc-main-title{
+    font-size: 23px;
+    font-family: 'Raleway-Black';
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+.section_7 .mc-custome-title .mc-sub-title{
+    position: absolute;
+    font-size: 55px;
+    bottom: -10px;
+    font-family: 'Raleway-Black';
+    color: #e7e7e7;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section_6{
+    margin-bottom: 45px;
+}
+.list_post_sec_7 .mc-list-cate-7 a{
+    display: block;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+.list_post_sec_7 .mc-list-cate-7 a:hover:before{
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    box-shadow: 0 0 10px #aedbdb;
+}
+.list_post_sec_7 .mc-list-cate-7 a::before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    border-radius: 6px;
+    background-color: #aedbdb;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.list_post_sec_7 .mc-list-cate-7{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.list_post_sec_7 .title_item_sec_7{
+    font-size: 21px;
+    font-family: 'Raleway-Black';
+    margin-bottom: 15px;
+    display: block;
+}
+.list_post_sec_7 .excerpt-item-7{
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.list_post_sec_7 .author_date{
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Regular';
+    color: #666;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.list_post_sec_7 .author_date .author{
+    font-family: 'Montserrat-Bold';
+    color: #000;
+}
+.list_post_sec_7 .author_date span{
+    margin: 0 3px;
+}
+.list_post_sec_7 .img-first-sec-7 img{
+    height: 215px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section_7 .item-sec-7{
+    margin-bottom: 30px;
+}
+.read-more-7 a{
+    width: 150px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 25px;
+    margin: 0 auto;
+    font-family: 'Montserrat-Bold';
+    color: #000;
+    font-size: 12px;
+    background:#f7f7f7;
+    transition: 0.3s all;
+}
+.read-more-7 a:hover{
+    transition: 0.3s all;
+    background: #aedbdb;
+    color:#fff;
+    box-shadow: 0 0 15px #aedbdb;
+}
+.section_7{
+    margin-bottom: 40px;
+}
  /* END STYLE HOME */
