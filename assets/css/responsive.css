@@ -218,6 +218,14 @@
     .section_5 .item-bottom-5 .thumb-bt-5 img{
         height: 180px;
     }
+    .fot-maps img{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 22px;
+    }
+    .footer .title-maps{
+        font-size: 24px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .mc-col-md-1{
@@ -542,6 +550,40 @@
     }
     .section_7 .item-sec-7{
         margin-bottom: 10px;
+    }
+    .section_7{
+        margin-bottom: 45px;
+    }
+    .footer .title-maps{
+        font-size: 20px;
+        color:#000;
+    }
+    .footer .footer-right .title-form-footer{
+        font-size: 20px;
+    }
+    .footer .footer-right .inp-submit{
+        flex: 0 0 30%;
+        max-width: 30%;
+        width: 100%;
+    }
+    .footer .footer-right .inp-form-footer{
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+    .footer .footer-right .inp-submit input{
+        font-size: 15px;
+    }
+    .item-soc a .icon-social{
+        font-size: 18px;
+    }
+    .footer .title-soc{
+        margin-bottom: 20px;
+    }
+    .item-soc{
+        margin-bottom: 20px;
+    }
+    .footer{
+        padding-bottom: 20px;
     }
 }
 @media only screen and (max-width: 438px) {
