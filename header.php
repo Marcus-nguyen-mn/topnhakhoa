@@ -17,10 +17,15 @@
         <div class="mc_header_row">
             <div class="left-header">
                 <div class="left-row">
+                    <button class="btn-menu-mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <a href='<?php echo site_url(); ?>' class="logo">
                         <img src="<?php echo get_field('logo','option'); ?>" alt="Logo" />
                     </a>
-                    <div class="main_menu">
+                    <div class="main_menu main_menu_desktop">
                         <?php
                             wp_nav_menu( array(
                                 'theme_location' => 'main_menu',
@@ -50,3 +55,46 @@
         </div>
     </div>
 </section>
+<div class="mc_header_mobile">
+    <div class="mc_header_mobile_contain">
+        <?php
+            wp_nav_menu( array(
+                'theme_location' => 'header_mobile',
+            ) );
+        ?>
+    </div>
+</div>
+<div class="menu_mobile">
+    <div class="menu_mobile_contain">
+        <div class="mc-menu-mb">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu_mobile',
+                ) );
+            ?>
+        </div>
+        <div class="social-in-menu">
+            <div class="row-social">
+                <div class="left-title">
+                    Follow Us
+                </div>
+                <div class="right-social">
+                    <div class="right-social-row">
+                        <?php if( have_rows('list_social_footer','option') ):
+                            while( have_rows('list_social_footer','option') ) : the_row(); ?>
+                            <div class="item-social">
+                                <a href="<?php echo get_sub_field('link_social_footer','option'); ?>"><?php echo get_sub_field('icon_social_footer','option'); ?></a>
+                            </div>
+                            <?php 
+                                endwhile;
+                                endif;
+                            ?>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay_menu">
+</div>
