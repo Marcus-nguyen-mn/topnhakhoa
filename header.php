@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta property="og:image" content="<?php echo esc_url($featured_img_url); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -64,7 +64,7 @@
         ?>
     </div>
 </div>
-<div class="menu_mobile">
+<div class="menu_mobile menu-fade-in">
     <div class="menu_mobile_contain">
         <div class="mc-menu-mb">
             <?php
@@ -96,5 +96,5 @@
         </div>
     </div>
 </div>
-<div class="overlay_menu">
+<div class="overlay_menu menu-fade-in">
 </div>

@@ -1534,6 +1534,7 @@ a{
     width: 30px;
     margin-right: 20px;
     height: 30px;
+    display: none;
 }
 .btn-menu-mobile span:first-child{
     position: absolute;
@@ -1542,6 +1543,7 @@ a{
     width: 28px;
     height: 2px;
     background: #000;
+    transition: 0.3s all;
 }
 .btn-menu-mobile span:nth-child(2){
     position: absolute;
@@ -1558,8 +1560,16 @@ a{
     width: 14px;
     height: 2px;
     background: #000;
+    transition: 0.3s all;
 }
 .mc_header_mobile{
     display: none;
 }
- /* END STYLE HOME */
+.menu_mobile{
+    display: none;
+}
+.menu-fade-in{-webkit-animation:menu-fade-in 0.3s cubic-bezier(.39,.575,.565,1.000) both;animation:menu-fade-in 0.3s cubic-bezier(.39,.575,.565,1.000) both}
+ @-webkit-keyframes menu-fade-in{0%{opacity:0}100%{opacity:1}}@keyframes menu-fade-in{0%{opacity:0}100%{opacity:1}}
+ body.active{
+    margin: 0; height: 100%; overflow: hidden
+ }
