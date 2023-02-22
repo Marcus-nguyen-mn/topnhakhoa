@@ -1,85 +1,106 @@
 <?php
 get_header();
 ?>
-<?php
-    get_template_part('sections/home/focus'); 
-    get_template_part('sections/banner-top-on-all-page');
-?>
-<div class="mc_cate_name">
+<section class="mc_category">
     <div class="mc-container">
-        <?php echo single_cat_title(); ?>
-    </div>
-</div>
-<section class="show_pth_sec_1 mc_category">
-    <div class="mc-container">
-        <div class="show_pth_sec_1_contain">
-            <div class="mc-row mc-mg--15">
-                <div class="mc-col-9 mc-col-sm-12 mc-pdx-15">
-                    
-                    <div class="show_pth">
-                        <div class="mc-row mc-mg--15">
-                            <?php $count=1; if (have_posts()) : while(have_posts()) : the_post(); ?>
-                            <?php 
-                                if($count == 1) :
-                            ?>
-                            <div class="mc-col-12 mc-pdx-15">
-                                <a href="<?php the_permalink(); ?>" class="sec_1_pth_one_post mc-row mc-mg--15">
-                                    <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
-                                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=" <?php echo get_the_title(); ?>">
-                                    </div>
-                                    <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
-                                        <div class="thtm-2-title-post">
-                                            <?php echo get_the_title(); ?>
-                                        </div>
-                                        <div class="thtm-2-date-post">
-                                            <?php echo get_the_date( 'Y-m-d' ); ?>
-                                        </div>
-                                        <div class="thtm-2-excerpt-post">
-                                            <?php echo get_the_excerpt(); ?>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <?php else: ?>
-                            <a href="<?php the_permalink(); ?>" class="thtm-mgb mc-col-4 mc-col-sm-12 mc-pdx-15">
-                                <div class="sec_1_pth_many_post">
-                                    <div class="thtm-thumb-post">
-                                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=" <?php echo get_the_title(); ?>">
-                                    </div>
-                                    <div class="thtm-title-post">
-                                        <?php echo get_the_title(); ?>
-                                    </div>
-                                    <div class="cate-2-date-post">
-                                        <?php echo get_the_date( 'Y-m-d' ); ?>
-                                    </div>
-                                    <div class="cate-2-excerpt-post">
-                                        <?php echo get_the_excerpt(); ?>
-                                    </div>
-                                </div>
+        <div class="mc-cate-contain">
+            <div class="cat-grid">
+                <?php $count=1; if (have_posts()) : while(have_posts()) : the_post(); ?>
+                    <?php if($count <= 5) : ?>
+                    <div class="cat-first-item">
+                        <a href="<?php the_permalink(); ?>" class="thumb-cat-first">
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=" <?php echo get_the_title(); ?>">
+                        </a>
+                        <div class="st-group-cate-info">
+                            <?php
+                                $category_detail=get_the_category(get_the_ID());
+                                $count_cat = 0;
+                                foreach($category_detail as $cd){ $count_cat++;
+                                if($count_cat <= 1){
+                                ?>
+                            <a href="<?php echo get_category_link( $cd->term_id ); ?>" class="cat-name">
+                                <?php echo $cd->name; ?>
                             </a>
-                            <?php endif; ?>
-                            <?php $count++;endwhile; endif; ?>
+                            <?php 
+                                }
+                            }
+                            ?>
+                            <a href="<?php the_permalink(); ?>" class="title-post-sec-cat"><?php the_title(); ?></a>
+                            <div class="author_date">
+                                <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j' ); ?></span>
+                            </div>
                         </div>
                         
-                    </div> 
-                    
-                    <?php
-                    the_posts_pagination( array(
-                    'prev_text' => __( 'Trước', 'textdomain' ),
-                    'next_text' => __( 'Sau', 'textdomain' ),
-                    ) );
-                    ?>
-                    
-                </div>
-                <div class="mc-col-3 mc-col-sm-12 mc-pdx-15">
-                    <div class="banner_qc_news_1">
-                        <a href="<?php echo get_field("cate_mc_link_banner_quc_1","option"); ?>" class="stk-banenr">
-                            <img src="<?php echo get_field("cate_mc_banner_quc_1","option"); ?>" alt="<?php echo get_field("cate_mc_banner_quc_1","option"); ?>">
-                        </a>
                     </div>
+                    <?php endif; ?>
+                <?php $count++;endwhile; endif; ?>
+            </div>
+            <div class="text-center-cat">
+                You can read everything you want in this page !
+            </div>
+            <div class="mc-custome-title">
+                <div class="mc-main-title">
+                    <?php echo single_cat_title(); ?>
+                </div>
+                <div class="mc-sub-title">
+                    Latest Blog
                 </div>
             </div>
+            <div class="mc-row mc-mg--15">
+            <?php $count_2=1; if (have_posts()) : while(have_posts()) : the_post(); ?>
+                    <?php if($count_2 > 5) : ?>
+                <div class="mc-col-6 mc-pdx-15 mc-col-md-12">
+                    <div class="item-sec-cat">
+                        <div class="mc-row mc-mg--15">
+                            <div class="mc-col-7 oder-2 mc-col-sm-12 mc-pdx-15">
+                                <div class="mc-list-sec-cat">
+                                    <?php
+                                        $category_detail=get_the_category(get_the_ID());
+                                        $count_cat = 0;
+                                        foreach($category_detail as $cd){ $count_cat++;
+                                        if($count_cat <= 2){
+                                        ?>
+                                    <a href="<?php echo get_category_link( $cd->term_id ); ?>">
+                                        <?php echo $cd->name; ?>
+                                    </a>
+                                    <?php 
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                                <a href="<?php the_permalink(); ?>" class="title_item_sec_cat">
+                                    <?php echo get_the_title(); ?>
+                                </a>
+                                <div class="excerpt-cat-sec">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                                <div class="author_date">
+                                    <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j' ); ?></span>
+                                </div>
+                            </div>
+                            <div class="mc-col-5 oder-1 mc-col-sm-12 mc-pdx-15">
+                                <a href="<?php the_permalink(); ?>" class="img-cat-sec-2">
+                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_url(); ?>" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endif; ?>
+            <?php $count_2++;endwhile; endif; ?>
+            </div>  
         </div>
+        <div class="mc-panigation">
+            <?php
+                the_posts_pagination( array(
+                'prev_text' => __( 'Trước', 'textdomain' ),
+                'next_text' => __( 'Sau', 'textdomain' ),
+                ) );
+            ?>          
+        </div>
+        
     </div>
+    
 </section>
+
 <?php get_footer();?>
