@@ -1573,3 +1573,257 @@ a{
  body.active{
     margin: 0; height: 100%; overflow: hidden
  }
+ /* CSS CATEGORY PAGE */
+ .mc_category .cat-grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 40px;
+    margin-bottom: 30px;
+ }
+ .mc_category .cat-grid .cat-first-item:nth-child(2){
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+ }
+ .mc_category .text-center-cat{
+    background: #4b8787;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 45px;
+ }
+ .mc_category .mc-custome-title{
+    position: relative;
+    margin-bottom: 40px;
+}
+.mc_category .mc-custome-title .mc-main-title{
+    font-size: 23px;
+    font-family: 'Raleway-Black';
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+.mc_category .mc-custome-title .mc-sub-title{
+    position: absolute;
+    font-size: 55px;
+    bottom: -10px;
+    font-family: 'Raleway-Black';
+    color: #e7e7e7;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mc_category .item-sec-cat{
+    margin-bottom: 30px;
+}
+.mc_category .item-sec-cat .mc-list-sec-cat a{
+    display: block;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+.mc_category .item-sec-cat .mc-list-sec-cat a:hover:before{
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    box-shadow: 0 0 10px #aedbdb;
+}
+.mc_category .item-sec-cat .mc-list-sec-cat a::before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    border-radius: 6px;
+    background-color: #aedbdb;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.mc_category .item-sec-cat .mc-list-sec-cat{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mc_category .item-sec-cat .title_item_sec_cat{
+    font-size: 21px;
+    font-family: 'Raleway-Black';
+    margin-bottom: 15px;
+    display: block;
+}
+.mc_category .item-sec-cat .excerpt-cat-sec{
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.mc_category .item-sec-cat .author_date{
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Regular';
+    color: #666;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.mc_category .item-sec-cat .author_date .author{
+    font-family: 'Montserrat-Bold';
+    color: #000;
+}
+.mc_category .item-sec-cat .author_date span{
+    margin: 0 3px;
+}
+.mc_category .item-sec-cat .img-cat-sec-2 img{
+    height: 215px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.mc_category{
+    padding-top: 30px;
+}
+.mc_category .cat-first-item img{
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.mc_category .cat-first-item .thumb-cat-first{
+    display: block;
+    margin-bottom: 12px;
+}
+.mc_category .cat-name{
+    display: block;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.mc_category .cat-name:before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    border-radius: 6px;
+    background-color: #aedbdb;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.mc_category .cat-name:hover:before{
+    -webkit-transition: -webkit-box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    transition: box-shadow .25s cubic-bezier(.32,.74,.57,1);
+    box-shadow: 0 0 10px #aedbdb;
+}
+.mc_category .title-post-sec-cat{
+    font-size: 15px;
+    font-family: 'Raleway-Black';
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+.author_date span{
+    margin: 0 3px;
+}
+.author_date{
+    text-align: center;
+    font-family: 'Montserrat-Regular';
+    color: #666;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.author_date .author{
+    font-family: 'Montserrat-Bold';
+    color:#000;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .thumb-cat-first{
+    height: 100%;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2){
+    position: relative;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .thumb-cat-first img{
+    height: 100%;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .st-group-cate-info{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    z-index: 2;
+    background: linear-gradient(to top,#10142d 0,#10142de6 calc(100% - 150px),#10142d00 100%);
+    border-radius: 0 0 10px 10px;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .title-post-sec-cat{
+    font-size: 41px;
+    color: #fff;
+    line-height: 50px;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .author_date{
+    color:#fff;
+}
+.mc_category .cat-grid .cat-first-item:nth-child(2) .author_date .author{
+    color:#fff;
+}
+.mc_category .mc-panigation{
+    margin: 15px 0 60px 0;
+}
+.mc_category .nav-links{
+    text-align: center;
+}
+.mc_category .nav-links .page-numbers.current{
+    padding: 8px 10px;
+    background: #aedbdb;
+    border-radius: 14px;
+    color: #fff;
+    border: 1px solid #aedbdb;
+}
+.mc_category .nav-links .page-numbers:hover{
+    background: #aedbdb;
+    color: #fff;
+    transition: 0.3s all;
+    border: 1px solid #aedbdb;
+    box-shadow: 1px 1px 20px #aedbdb;
+}
+.mc_category .nav-links .page-numbers{
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 14px;
+    color: #000;
+    border: 1px solid #80808026;
+    margin: 0 2px;
+    font-size: 12px;
+    font-family: 'Montserrat-Bold';
+    transition: 0.3s all;
+}

@@ -61,7 +61,7 @@ get_header();
                             <?php $count++;endwhile; endif; ?>
                         </div>
                         
-                    </div>
+                    </div> 
                     
                     <?php
                     the_posts_pagination( array(
