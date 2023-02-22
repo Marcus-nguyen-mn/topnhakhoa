@@ -49,7 +49,7 @@ get_header();
             <div class="mc-row mc-mg--15">
             <?php $count_2=1; if (have_posts()) : while(have_posts()) : the_post(); ?>
                     <?php if($count_2 > 5) : ?>
-                <div class="mc-col-6 mc-pdx-15">
+                <div class="mc-col-6 mc-pdx-15 mc-col-md-12">
                     <div class="item-sec-cat">
                         <div class="mc-row mc-mg--15">
                             <div class="mc-col-7 oder-2 mc-col-sm-12 mc-pdx-15">

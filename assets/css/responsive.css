@@ -92,6 +92,17 @@
         height: 190px;
         object-fit: cover;
     }
+    .mc_category .cat-grid{
+        gap: 0px;
+    }
+    .cat-first-item{
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    .mc_category .cat-grid{
+        margin: 0 -10px;
+        margin-bottom: 30px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .section_1 .left-banner{
@@ -276,6 +287,14 @@
         transform: rotate(136deg);
         transition: 0.3s all;
         top: 14px;
+    }
+    .mc_category .cat-first-item img{
+        height: 110px;
+    }
+    .mc_category .cat-grid .cat-first-item:nth-child(2) .title-post-sec-cat{
+        font-size: 24px;
+        color: #fff;
+        line-height: 34px;
     }
 }
 @media only screen and (max-width: 876px){
@@ -739,6 +758,54 @@
     }
     .menu-header-mobile-container::-webkit-scrollbar {
         display: none;
+      }
+      .mc_category .cat-grid{
+        grid-template-columns: 100%;
+      }
+      .mc_category .cat-grid .cat-first-item:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: unset;
+        grid-column-start: unset;
+        margin: 0 20px;
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      .mc_category .cat-grid .cat-first-item:nth-child(2)::before{
+        height: 194px;
+      }
+      .mc_category .cat-first-item img{
+        height: 235px;
+      }
+      .mc_category .cat-grid .cat-first-item:nth-child(2) .title-post-sec-cat{
+        padding: 0 10px;
+      }
+      .mc_category .title-post-sec-cat{
+        padding: 0 10px;
+        font-size: 21px;
+      }
+      .mc_category .mc-custome-title .mc-sub-title{
+        font-size: 30px;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transform: translateX(0);
+      }
+      .mc_category .text-center-cat{
+        margin-bottom: 30px;
+      }
+      .mc_category .cat-grid{
+        margin-bottom: 12px;
+      }
+      .mc_category .item-sec-cat .mc-list-sec-cat{
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .mc_category .item-sec-cat .title_item_sec_cat{
+        text-align: center;
+      }
+      .mc_category .item-sec-cat .excerpt-cat-sec{
+        text-align: center;
       }
 }
 @media only screen and (max-width: 438px) {
