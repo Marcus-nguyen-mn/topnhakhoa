@@ -311,6 +311,7 @@ a{
     top: 47px;
     background: transparent;
     display: none;
+    z-index: 4;
 }
 .mega-row{
     display: flex;
