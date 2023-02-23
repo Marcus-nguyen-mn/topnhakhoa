@@ -1828,3 +1828,90 @@ a{
     font-family: 'Montserrat-Bold';
     transition: 0.3s all;
 }
+/* END CSS CATEGORY PAGE */
+/* CSS CONTACT US PAGE */
+.contact_page{
+    padding: 50px 0 70px 0;
+    border-top: 1px solid #80808026;
+}
+.contact_page .sub_titl_contact{
+    font-size: 21px;
+    color:#777777;
+    text-align: center;
+    font-family: 'Raleway-Black';
+}
+.contact_page .title_contact{
+    font-size: 42px;
+    color:#333333;
+    text-align: center;
+    font-family: 'Raleway-Black';
+    margin-bottom: 40px;
+}
+.contact_page .contact_maps{
+    margin-bottom: 20px;
+}
+.contact_maps iframe{
+    height: 208px;
+    width: 100%;
+}
+.contact_page .mc-title-form-ctp{
+    font-size: 21px;
+    color:#333333;
+    font-family: 'Raleway-Black';
+    margin-bottom: 14px;
+}
+.contact_page .desc-from-ctp{
+    margin-bottom: 30px;
+    font-family: 'Lora-Italic';
+    font-size: 14px;
+    color:#333333;
+    line-height: 24px;
+}
+.contact-page-contain{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contact_page .ctp-inpt-form{
+    margin-bottom: 20px;
+}
+.contact_page .ctp-inpt-form input{
+    width: 100%;
+    background: #88888812;
+    padding: 12px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora-Regular';  
+    font-size: 14px;
+}
+.contact_page .ctp-textarea-form textarea{
+    width: 100%;
+    background: #88888812;
+    padding: 12px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora-Regular';  
+    font-size: 14px;
+    height: 230px;
+}
+.mc-ctp-sub button{
+    width: 185px;
+    padding: 12px 5px;
+    display: block;
+    font-size: 13px;
+    font-family: 'Raleway-Bold';
+    color: #fff;
+    background: #aedbdb;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.mc-ctp-sub button:hover{
+    box-shadow: 0 4px 15px #aedbdbe6;
+    transition: 0.3s all;
+}
+/* END CSS CONTACT US PAGE */
