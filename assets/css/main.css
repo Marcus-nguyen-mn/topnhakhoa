@@ -1914,4 +1914,9 @@ a{
     box-shadow: 0 4px 15px #aedbdbe6;
     transition: 0.3s all;
 }
+.phoneVal, .nameVal{
+    display: none;
+    font-size: 14px;
+    color: #ff0000e6;
+}
 /* END CSS CONTACT US PAGE */

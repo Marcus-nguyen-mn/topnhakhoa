@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
     sliderPostsSec3();
     menuMobile();
+    FormContact(".btn-subm-ctp","formCtpPage",".formCtpPage","#nameCtp","#sdtCtp",".phoneVal",".nameVal");
 });
 function sliderPostsSec3(){
     jQuery('.slider_post_sec_3').slick({
@@ -67,4 +68,84 @@ function menuMobile(){
     }
 
   }
+}
+
+function FormContact(buttonClass , formClass , dataClass, idHoTen, idSdt, phoneVal, nameVal){
+    var submit = jQuery(buttonClass);
+    submit.click(function(){
+    var hoTen = document.forms[formClass]["hoTen"].value;
+    var sdt = document.forms[formClass]["Sdt"].value;
+    var remove_space = jQuery.trim(sdt.replace(/ /g,''));
+    var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+    if(hoTen == "" || sdt == ""){
+    if(hoTen == ""){ jQuery(nameVal).css('display','block');}
+        jQuery(idHoTen).click(function(){
+        jQuery(nameVal).css('display','none');
+      });
+        if(sdt !== ""){
+        if (vnf_regex.test(remove_space) == false){
+          jQuery(phoneVal).empty().append('<span>Số điện thoại không đúng định dạng!</span>');
+          jQuery(phoneVal).css('display','block');
+        }
+        else{
+          jQuery(phoneVal).empty().append('<span>Số điện thoại hợp lệ!</span>');
+          jQuery(phoneVal).css('display','block');
+        }
+      }else{
+        jQuery(phoneVal).empty().append('Bạn chưa nhập số điện thoại!');
+        jQuery(phoneVal).css('display','block');
+      }
+      jQuery(idSdt).click(function(){
+        jQuery(phoneVal).css('display','none');});
+      return false;
+    }
+    if(hoTen !== "" || sdt !== ""){
+      if (vnf_regex.test(remove_space) == false){
+      jQuery(phoneVal).empty().append('<span>Số điện thoại không đúng định dạng!</span>');
+      jQuery(phoneVal).css('display','block');
+    }
+    else{
+      jQuery(phoneVal).empty().append('<span>Bạn đã đăng kí thành công!</span>');
+      jQuery(phoneVal).css('display','block');
+  
+      var data = jQuery(dataClass).serialize();
+      jQuery.ajax({
+        type : 'GET',
+        url : 'https://script.google.com/macros/s/AKfycbz3Wv5vn4Wkq_7AInlu4xTEmmQVADjsJEw4CmwiHEtUMiTTaOP49WYeVd_HZeFzfHLh/exec',
+        dataType:'json',
+        crossDomain : true,
+        data : data,
+        success : function(response){
+          if(response == 'false')
+          {
+            alert('Thêm không thành công');
+          }else{
+              alert('Đăng ký thành công. Chúng tôi sẽ liên hệ hỗ trợ trong thời gian sớm nhất. Trân trọng!');
+            }
+          }
+        });
+      return false;
+    }
+    return false;
+  }
+  else{
+    var data = jQuery(formClass).serialize();
+    jQuery.ajax({
+      type : 'GET',
+      url : 'https://script.google.com/macros/s/AKfycbz3Wv5vn4Wkq_7AInlu4xTEmmQVADjsJEw4CmwiHEtUMiTTaOP49WYeVd_HZeFzfHLh/exec',
+      dataType:'json',
+      crossDomain : true,
+      data : data,
+      success : function(data){
+        if(data == 'false')
+        {
+          alert('Thêm không thành công');
+        }else{
+          alert('Đăng ký thành công. Chúng tôi sẽ liên hệ hỗ trợ trong thời gian sớm nhất. Trân trọng!');
+        }
+      }
+    });
+    return false;
+  }
+  });
 }

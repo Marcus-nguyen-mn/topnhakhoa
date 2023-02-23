@@ -23,36 +23,42 @@ get_header();
                 <div class="desc-from-ctp">
                     <?php echo get_field("description_form_contact_page"); ?>
                 </div>
-                <form>
+                <form class="formCtpPage" id="formCtpPage" name="formCtpPage">
                     <div class="mc-row mc-mg--15">
                         <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
-                                <input type="text" placeholder="Name" />
+                                <input type="text" name="hoTen" id="nameCtp" placeholder="Name" />
+                                <div class="nameVal">
+                                    Bạn chưa nhập họ tên
+                                </div>
                             </div>
                         </div>
                         <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
-                                <input type="text" placeholder="Email" />
+                                <input type="text" name="emailCtp" placeholder="Email" />
                             </div>
                         </div>
                         <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
-                                <input type="number" placeholder="Phone Number" />
+                                <input type="text" name="Sdt" id="sdtCtp" placeholder="Phone Number" />
+                                <div class="phoneVal">
+                                    Bạn chưa nhập số điện thoại
+                                </div>
                             </div>
                         </div>
                         <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
-                                <input type="text" placeholder="Website" />
+                                <input type="text" name="webCtp" placeholder="Website" />
                             </div>
                         </div>
                         <div class="mc-col-12 mc-pdx-15">
                             <div class="ctp-inpt-form ctp-textarea-form">
-                                <textarea name="" id="" placeholder="Message..."></textarea>
+                                <textarea id="" name="message" placeholder="Message..."></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="mc-ctp-sub">
-                        <button type="submit">Leave a Message</button>
+                        <button type="submit" class="btn-subm-ctp">Leave a Message</button>
                     </div>
                 </form>
             </div>
