@@ -817,6 +817,19 @@
       .contact_page .mc-title-form-ctp{
         font-size: 18px;
       }
+      .error-contain img{
+        width: 100%;
+      }
+      .error-contain h3{
+        font-size: 18px;
+      }
+      .error-contain{
+        font-size: 14px;
+        padding-bottom: 30px;
+      }
+    .page_404{
+        min-height: 400px;
+    }
 }
 @media only screen and (max-width: 438px) {
 }

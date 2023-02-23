@@ -21,13 +21,13 @@ foreach ($file_includes as $file) {
     require_once $filePath;
 }
 unset($file, $filePath);
-// //404
-// add_action('wp', 'redirect_404_to_homepage', 1);
-// function redirect_404_to_homepage()
-// {
-//     global $wp_query;
-//     if ($wp_query->is_404) {
-//         wp_redirect(get_bloginfo('url') . '/loi-404', 301);
-//         exit;
-//     }
-// }
+//404
+add_action('wp', 'redirect_404_to_homepage', 1);
+function redirect_404_to_homepage()
+{
+    global $wp_query;
+    if ($wp_query->is_404) {
+        wp_redirect(get_bloginfo('url') . '/error-404', 301);
+        exit;
+    }
+}

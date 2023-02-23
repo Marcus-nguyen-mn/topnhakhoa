@@ -369,7 +369,9 @@ a{
     top: 34px;
     padding: 10px;
     display: none;
-    -webkit-animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both;animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both
+    -webkit-animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both;animation:mc-fade-in-bottom .3s cubic-bezier(.39,.575,.565,1.000) both;
+    z-index: 4;
+    background: #fff;
 }
 .mc_header .menu-item-has-children:hover .sub-menu{
     display: block;
@@ -1920,3 +1922,46 @@ a{
     color: #ff0000e6;
 }
 /* END CSS CONTACT US PAGE */
+/* 404 */
+.page_404{
+    min-height: 600px;
+}
+.error-contain img{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.error-contain h3{
+    font-family: 'Raleway-Black';
+    font-size: 42px;
+    margin-bottom: 25px;
+    color:#000;
+}
+.error-contain{
+    color:#666666;
+    font-size: 18px;
+    margin-bottom: 25px;
+    padding-bottom: 100px;
+}
+.mc-btn-go-home{
+    margin-top: 30px;
+}
+.mc-btn-go-home a{
+    display: block;
+    width: 212px;
+    text-align: center;
+    font-size: 12px;
+    padding: 14px 5px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    font-family: 'Raleway-Bold';
+    border-radius: 25px;
+    transition: 0.3s all;
+}
+.mc-btn-go-home a:hover{
+    transition: 0.3s all;
+    color:#fff;
+    background:#aedbdb;
+    -webkit-box-shadow: 0 4px 15px #aedbdbe6;
+    box-shadow: 0 4px 15px #aedbdbe6;
+}
