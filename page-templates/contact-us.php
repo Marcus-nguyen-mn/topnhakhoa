@@ -25,22 +25,22 @@ get_header();
                 </div>
                 <form>
                     <div class="mc-row mc-mg--15">
-                        <div class="mc-col-6 mc-pdx-15">
+                        <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
                                 <input type="text" placeholder="Name" />
                             </div>
                         </div>
-                        <div class="mc-col-6 mc-pdx-15">
+                        <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
                                 <input type="text" placeholder="Email" />
                             </div>
                         </div>
-                        <div class="mc-col-6 mc-pdx-15">
+                        <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
                                 <input type="number" placeholder="Phone Number" />
                             </div>
                         </div>
-                        <div class="mc-col-6 mc-pdx-15">
+                        <div class="mc-col-6 mc-col-sm-12 mc-pdx-15">
                             <div class="ctp-inpt-form">
                                 <input type="text" placeholder="Website" />
                             </div>
