@@ -467,6 +467,9 @@
     .sec_6_contain{
         margin-bottom: 40px;
     }
+    .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp input{
+        width: 560px;
+    }
 }
 @media only screen and (max-width: 576px) {
     .mc-col-sm-1{
@@ -829,6 +832,30 @@
       }
     .page_404{
         min-height: 400px;
+    }
+    .item-search .thumb-bt-item-search img{
+        height: 235px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp input{
+        width: 300px;
+        padding: 20px 44px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp .icon-search{
+        font-size: 15px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp .search_submit_page{
+        height: 56px;
+        width: 60px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp::before{
+        height: 16px;
+        right: 58px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .title-search-head{
+        font-size: 20px;
+    }
+    .mc-search-page .bg-head-search .content-on-search-head .number-result-search{
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 438px) {
