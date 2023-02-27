@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
     sliderPostsSec3();
     menuMobile();
     FormContact(".btn-subm-ctp","formCtpPage",".formCtpPage","#nameCtp","#sdtCtp",".phoneVal",".nameVal");
+    handleShowFormSearch();
 });
 function sliderPostsSec3(){
     jQuery('.slider_post_sec_3').slick({
@@ -148,4 +149,19 @@ function FormContact(buttonClass , formClass , dataClass, idHoTen, idSdt, phoneV
     return false;
   }
   });
+}
+function handleShowFormSearch(){
+  let btnShowFormSearch = document.querySelector("#btnShowFormSearch");
+  let searchFormHeader = document.querySelector("#searchFormHeader");
+  let searchFieldCs = document.querySelector(".search_field_cs")
+  if(btnShowFormSearch){
+    btnShowFormSearch.onclick = ()=>{
+      searchFormHeader.classList.toggle("active");
+    }
+  }
+  window.onclick = function(event) {
+    if (event.target != searchFormHeader && event.target != btnShowFormSearch && event.target != searchFieldCs) {
+      searchFormHeader.classList.remove("active");
+    }
+  }
 }

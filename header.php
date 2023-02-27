@@ -40,12 +40,23 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noti.svg" class="notice-black" alt="Notice Black">
                     </div>
                     <div class="item-right search">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.svg" class="search-black" alt="Search Black">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.svg" class="search-black" id="btnShowFormSearch" alt="Search Black">
+                        <div class="form-search-header fade-in-bottom-search" id="searchFormHeader">
+                            <form role="search" method="get" class="search_form" action="<?php echo esc_url( home_url( '/' ) ); ?>">                                 		
+                                <div class="search_form_page_wrap">
+                                    <div class="parents-search-inp">
+                                        <div class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                        <input type="text" id="search_field_2" class="search-field search_field_form_page search_field_cs" placeholder="Điền từ khóa" value="<?php echo get_search_query(); ?>" name="s" />
+                                        <button type="submit" class="search_submit_page search_submit_page_search_page"><i class="fa-regular fa-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="change-mode">
                         <div class="change-mode-bar">
                             <div class="btn-change">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun.svg" class="search-black" alt="Search Black">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun.svg" alt="Dark mode">
                             </div>
                             
                         </div>

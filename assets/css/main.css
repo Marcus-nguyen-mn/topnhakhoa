@@ -2139,3 +2139,73 @@ a{
     transition: 0.3s all;
 }
 /* END CSS SEARCH PAGE */
+.mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp{
+    position: relative;
+}
+.mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background: #aedbdb;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-search-header{
+    position: absolute;
+    top: 40px;
+    right: -76px;
+    display: none;
+}
+.form-search-header.active{
+    display: block;
+}
+.form-search-header .parents-search-inp input{
+    width: 340px;
+    display: block;
+    padding: 18px 46px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 40px #0000001f;
+    -webkit-appearance: none;
+}
+.form-search-header .parents-search-inp .icon-search{
+    font-size: 15px;
+    color: #666666;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.form-search-header .parents-search-inp .search_submit_page{
+    color: #333333ba;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 52px;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    width: 60px;
+    font-family: 'Raleway-Bold';
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.3s all;
+}
+.form-search-header .parents-search-inp .search_submit_page:hover{
+    transition: 0.3s all;
+    color: #fff;
+    background: #aedbdb;
+}
+.parents-search-inp{
+    position: relative;
+}
+.mc_header .item-right.search{
+    position: relative;
+    cursor: pointer;
+}
+.fade-in-bottom-search{-webkit-animation:fade-in-bottom-search .6s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom-search .3s cubic-bezier(.39,.575,.565,1.000) both}
+ @-webkit-keyframes fade-in-bottom-search{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom-search{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
