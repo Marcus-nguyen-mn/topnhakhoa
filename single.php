@@ -5,7 +5,7 @@ get_header();
     <div class="mc-container">
         <div class="single_contain">
             <div class="mc-row mc-mg--15">
-                <div class="mc-col-9 mc-pdx-15 mc-col-sm-12">
+                <div class="mc-col-9 mc-pdx-15 mc-col-md-12 mc-col-sm-12">
                 <?php 
                     if(have_posts()):
                         while(have_posts()) : the_post();
@@ -46,7 +46,7 @@ get_header();
                         endif;
                     ?> 
                 </div>
-                <div class="mc-col-3 mc-pdx-15 mc-col-sm-12">
+                <div class="mc-col-3 mc-pdx-15 mc-col-md-12 mc-col-sm-12">
                     <div class="banner_qc_news_1">
                         <div class="stk-banenr">
                             <div class="title-post-new-mc">

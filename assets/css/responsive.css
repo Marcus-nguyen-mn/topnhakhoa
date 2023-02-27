@@ -470,6 +470,23 @@
     .mc-search-page .bg-head-search .content-on-search-head .search_form_page_wrap .parents-search-inp input{
         width: 560px;
     }
+    .default_single_post .ns-thumb-post-c2 img{
+        height: 450px;
+    }
+    .default_single_post .ns-title-post-c2{
+        margin-bottom: 35px;
+        font-size: 22px; 
+    }
+    .default_single_post .nc-list-before-first-c2 a img{
+        height: 200px;
+
+    }
+    .default_single_post .ns-title-post-horizontal-c2{
+        font-size: 20px;
+    }
+    .default_single_post .title-post-new-mc{
+        margin-top: 90px;
+    }
 }
 @media only screen and (max-width: 576px) {
     .mc-col-sm-1{
@@ -856,6 +873,33 @@
     }
     .mc-search-page .bg-head-search .content-on-search-head .number-result-search{
         font-size: 14px;
+    }
+    .default_single_post .title_sg_post{
+        font-size: 26px;
+    }
+    .default_single_post .excerpt_sg_post{
+        font-size: 15px;
+    }
+    .default_single_post .content-single p{
+        font-size: 15px;
+    }
+    .default_single_post .ns-thumb-post-c2 img{
+        height: 230px;
+    }
+    .default_single_post .ns-title-post-c2{
+        font-size: 20px;
+    }
+    .default_single_post .nc-list-before-first-c2 a img{
+        height: 115px;
+    }
+    .default_single_post .ns-title-post-horizontal-c2{
+        font-size: 16px;
+    }
+    .default_single_post{
+        padding: 45px 0px 40px 0;
+    }
+    .default_single_post .title-post-new-mc{
+        margin-top: 35px;
     }
 }
 @media only screen and (max-width: 438px) {

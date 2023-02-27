@@ -36,9 +36,6 @@
             </div>
             <div class="right-header">
                 <div class="right-func">
-                    <div class="item-right notification">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/noti.svg" class="notice-black" alt="Notice Black">
-                    </div>
                     <div class="item-right search">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.svg" class="search-black" id="btnShowFormSearch" alt="Search Black">
                         <div class="form-search-header fade-in-bottom-search" id="searchFormHeader">
