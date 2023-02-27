@@ -1,0 +1,92 @@
+body.dark{
+    background: #151921;
+}
+body.dark .mc_header .menu li a{
+    color: #fff;
+}
+body.dark .section_1 .right_content_sec_1 h3{
+    color: #fff;
+}
+body.dark .section_1 .right_content_sec_1, body.dark .sec4_contain .item-first-4 .author_date, body.dark .sec4_contain .item-first-4 .author_date .author, body.dark .sec4_contain .item-second-4 .title_item_sec_4,
+body.dark .sec4_contain .item-second-4 .date_sec_4, body.dark .section_5 .mc-custome-title .mc-main-title, body.dark .section_5 .item-first-5 .title_item_sec_5,body.dark  .section_5 .item-first-5 .descp_post_sec_5{
+    color: #fff;
+}
+body.dark .btn_sec_1 a, body.dark .section_5 .item-first-5 .author_date, body.dark .section_5 .item-first-5 .author_date .author, body.dark .section_5 .item-bottom-5 .title_item_sec_5, body.dark .section_5 .item-bottom-5 .date{
+    color: #fff;
+}
+body.dark .section_2 .item_sec_2 .title_item_sec_2, body.dark .section_2 .item_sec_2 .date_item_sec_2, body.dark .section_2 .title_list_cate, body.dark .sec3_contain .heading-inner .heading-title,
+body.dark .sec3_contain .slide_sec_3_item .title_post_sec_3, body.dark .sec3_contain .descp_post_sec_3, body.dark .sec3_contain .author_date .author, body.dark .sec3_contain .author_date, body.dark .sec4_contain .mc-custome-title .mc-main-title,
+body.dark .item-first-4 .title_item_sec_4, body.dark .sec4_contain .item-first-4 .descp_post_sec_4{
+    color:#fff;
+}
+body.dark .section_3 .shape svg .shape-fill{
+    fill: #151921;
+}
+body.dark .sec4_contain .mc-custome-title .mc-sub-title, body.dark .section_6 .mc-custome-title .mc-sub-title, body.dark .section_7 .mc-custome-title .mc-sub-title{
+    color: #e7e7e742;
+}
+body.dark .section_5 .mc-custome-title .mc-sub-title{
+    color: #e7e7e742;
+}
+body.dark .section_6 .mc-custome-title .mc-main-title, body.dark .list_post_6 .title-item-left-6, body.dark .list_post_6 .author_date, body.dark .list_post_6 .author_date .author,
+body.dark .list_post_6 .excerpt-item-left-6, body.dark .list_post_6 .title-item-tw-6, body.dark .list_post_6 .date, body.dark .section_7 .mc-custome-title .mc-main-title{
+    color: #fff;
+}
+body.dark .list_post_sec_7 .title_item_sec_7, body.dark .list_post_sec_7 .excerpt-item-7, body.dark .list_post_sec_7 .author_date .author, body.dark .list_post_sec_7 .author_date{
+    color: #fff;
+}
+body.dark .footer .title-maps, body.dark .footer .footer-right .title-form-footer, body.dark .footer .footer-right .desc-form-footer, body.dark .inp-form-footer input,
+body.dark .footer .title-soc, body.dark .item-soc a .icon-social, body.dark .item-soc a .name-social{
+    color:#fff;
+}
+body.dark .default_single_post .title_sg_post, body.dark .default_single_post .excerpt_sg_post, body.dark .default_single_post .rg-auth-1 a,
+body.dark .default_single_post .rg-auth-2, body.dark .default_single_post .title-post-new-mc,
+body.dark .default_single_post .ns-title-post-c2{
+    color:#fff;
+}
+body.dark .default_single_post .ns-title-post-horizontal-c2, body.dark .default_single_post .content-single h3, body.dark .default_single_post .content-single p, body.dark .default_single_post .content-single{
+    color:#fff;
+}
+body.dark .mc_category .title-post-sec-cat, body.dark .author_date .author, body.dark .author_date span, body.dark .mc_category .mc-custome-title .mc-main-title,
+body.dark .mc_category .item-sec-cat .title_item_sec_cat, body.dark .mc_category .item-sec-cat .author_date .author, body.dark .mc_category .item-sec-cat .excerpt-cat-sec{
+    color:#fff;
+}
+body.dark .mc_category .mc-custome-title .mc-sub-title{
+    color: #e7e7e742;
+}
+body.dark .mc_header_author .name_author, body.dark .mc_header_author .desc_author, body.dark .mc_header_author .txt-follow, body.dark .mc_header_author .item-soc,
+body.dark .item-post-author .title-item-post-author, body.dark .the-excerpt-post-author, body.dark .item-post-author .date{
+    color:#fff;
+}
+body.dark .mc_header_author::before{
+    background-image: radial-gradient(#fff 1px,transparent 1px);
+}
+body.dark .mega-popup .mega-item-title, body.dark .mega-popup .mega-item-date{
+    color:#000;
+}
+body.dark .mc_header .menu-item-has-children .sub-menu li a{
+    color:#000;
+}
+body.dark .mc-search-page .bg-head-search .content-on-search-head .title-search-head, body.dark .mc-search-page .bg-head-search .content-on-search-head .number-result-search,
+body.dark .item-search .title-item-search, body.dark .item-search .date{
+    color:#fff;
+}
+body.dark .error-contain, body.dark .error-contain h3{
+    color:#fff;
+}
+body.dark .contact_page .sub_titl_contact, body.dark .contact_page .title_contact, body.dark .contact_page .mc-title-form-ctp, body.dark .contact_page .desc-from-ctp,
+body.dark .contact_page .ctp-inpt-form input, body.dark .contact_page .ctp-textarea-form textarea{
+    color:#fff;
+}
+.search-black{
+    display: block;
+}
+body.dark .search-black{
+    display: none;
+}
+body.dark .search-white{
+    display: block;
+}
+.search-white{
+    display: none;
+}

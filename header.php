@@ -38,6 +38,7 @@
                 <div class="right-func">
                     <div class="item-right search">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.svg" class="search-black" id="btnShowFormSearch" alt="Search Black">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/search-white.svg" class="search-white" id="btnShowFormSearchWhite" alt="Search Black">
                         <div class="form-search-header fade-in-bottom-search" id="searchFormHeader">
                             <form role="search" method="get" class="search_form" action="<?php echo esc_url( home_url( '/' ) ); ?>">                                 		
                                 <div class="search_form_page_wrap">

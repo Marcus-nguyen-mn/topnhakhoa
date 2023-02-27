@@ -153,6 +153,7 @@ function FormContact(buttonClass , formClass , dataClass, idHoTen, idSdt, phoneV
 }
 function handleShowFormSearch(){
   let btnShowFormSearch = document.querySelector("#btnShowFormSearch");
+  let btnShowFormSearchWhite = document.querySelector("#btnShowFormSearchWhite");
   let searchFormHeader = document.querySelector("#searchFormHeader");
   let searchFieldCs = document.querySelector(".search_field_cs")
   if(btnShowFormSearch){
@@ -160,17 +161,24 @@ function handleShowFormSearch(){
       searchFormHeader.classList.toggle("active");
     }
   }
+  if(btnShowFormSearchWhite){
+    btnShowFormSearchWhite.onclick = ()=>{
+      searchFormHeader.classList.toggle("active");
+    }
+  }
   window.onclick = function(event) {
-    if (event.target != searchFormHeader && event.target != btnShowFormSearch && event.target != searchFieldCs) {
+    if (event.target != searchFormHeader && event.target != btnShowFormSearch && event.target != searchFieldCs && event.target != btnShowFormSearchWhite) {
       searchFormHeader.classList.remove("active");
     }
   }
 }
 function handleChangeMode(){
   let btnChangeMod = document.querySelector('#btnChangeMod');
+  let body = document.getElementsByTagName("BODY")[0];
   if(btnChangeMod){
     btnChangeMod.onclick = ()=>{
       btnChangeMod.classList.toggle("active");
+      body.classList.toggle("dark");
     }
   }
 }
