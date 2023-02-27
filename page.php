@@ -1,28 +1,52 @@
 <?php
 get_header();
-get_template_part('sections/home/focus'); 
-get_template_part('sections/banner-top-on-all-page');
 ?>
 <section class="default_single_post">
     <div class="mc-container">
         <div class="single_contain">
-            <?php 
-            if(have_posts()):
-                while(have_posts()) : the_post();
-            ?>
             <div class="mc-row mc-mg--15">
-                <div class="mc-col-9 mc-pdx-15 mc-col-sm-12">
+                <div class="mc-col-9 mc-pdx-15 mc-col-md-12 mc-col-sm-12">
+                <?php 
+                    if(have_posts()):
+                        while(have_posts()) : the_post();
+                    ?>
                     <div class="detail_post">
                         <div class="title_sg_post"><?php the_title(); ?></div>
-                        <div class="date-content">
-                            <?php echo get_the_date(); ?>
+                        <div class="excerpt_sg_post"><?php the_excerpt(); ?></div>
+                        <div class="mc-row mc-align-center mgb-25">
+                            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" class="thumb-auth">
+                                <?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?>
+                            </a>
+                            <div class="rg-author">
+                                <div class="rg-auth-1">
+                                    <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_attr( get_the_author() ); ?></a>
+                                </div>
+                                <div class="rg-auth-2">
+                                    POSTED: <?php echo get_the_date(); ?>
+                                </div>
+                            </div>
                         </div>
+                        <div class="post_thumb">
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=" <?php echo get_the_title(); ?>">
+                        </div>
+                    </div>
+                    <?php 
+                    endwhile;
+                        endif;
+                    ?>
+                    <?php 
+                        if(have_posts()):
+                            while(have_posts()) : the_post();
+                        ?>
                         <div class="content-single">
                             <?php the_content(); ?>
                         </div>
-                    </div>
+                       <?php 
+                    endwhile;
+                        endif;
+                    ?> 
                 </div>
-                <div class="mc-col-3 mc-pdx-15 mc-col-sm-12">
+                <div class="mc-col-3 mc-pdx-15 mc-col-md-12 mc-col-sm-12">
                     <div class="banner_qc_news_1">
                         <div class="stk-banenr">
                             <div class="title-post-new-mc">
@@ -81,10 +105,6 @@ get_template_part('sections/banner-top-on-all-page');
                     </div>
                 </div>
             </div>
-            <?php 
-            endwhile;
-                endif;
-            ?>
         </div>
     </div>
 </section>

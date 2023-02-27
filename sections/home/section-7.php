@@ -47,7 +47,7 @@
                                         <?php the_excerpt(); ?>
                                     </div>
                                     <div class="author_date">
-                                        <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j' ); ?></span>
+                                        <span>BY</span><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' ) ); ?>" class="author"><?php echo esc_attr( get_the_author() ); ?></a><span>|</span><span><?php echo get_the_date( 'D M j' ); ?></span>
                                     </div>
                                 </div>
                                 <div class="mc-col-5 oder-1 mc-col-sm-12 mc-pdx-15">

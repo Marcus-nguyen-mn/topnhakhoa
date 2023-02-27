@@ -40,7 +40,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/line-2.png" alt="Line">
                     </div>
                     <div class="author_date">
-                        <span>BY</span><span class="author">Dansolo</span><span>|</span><span><?php echo get_the_date( 'D M j', $post->ID ); ?></span>
+                        <span>BY</span><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' ) ); ?>" class="author"><?php echo esc_attr( get_the_author() ); ?></a><span>|</span><span><?php echo get_the_date( 'D M j', $post->ID ); ?></span>
                     </div>
                     <div class="descp_post_sec_3">
                         <?php echo get_the_excerpt($post->ID); ?>
