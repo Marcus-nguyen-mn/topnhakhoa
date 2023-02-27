@@ -52,8 +52,9 @@
                     </div>
                     <div class="change-mode">
                         <div class="change-mode-bar">
-                            <div class="btn-change">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun.svg" alt="Dark mode">
+                            <div class="btn-change" id="btnChangeMod">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sun.svg" class="white_mode" alt="White mode">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dark.svg" class="dark_mode" alt="Dark mode">
                             </div>
                             
                         </div>
